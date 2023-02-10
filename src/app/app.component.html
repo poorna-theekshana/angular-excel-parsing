@@ -1,0 +1,26 @@
+<html>
+<body>
+  <h2>File Upload</h2>
+  
+  <div class="container">
+    <div class="uploader">
+      <form id="file-upload-form">
+        <input id="file-upload" type="file" (change)="fileUpload($event)" name="fileUpload" accept=".xls,.xlsx" />
+        <label for="file-upload" id="file-drag">
+          <div id="start">
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <div>Select a file or drag here</div>
+            <span id="file-upload-btn" class="btn btn-primary">Select a file</span>
+          </div>
+        </label>
+      </form>
+    </div>
+    <div>
+      <pre>
+      {{convertedJson}}
+    </pre>
+    </div>
+  </div>
+</body>
+</html>
+
